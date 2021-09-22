@@ -111,9 +111,24 @@ const main_content = {
 
 // Store contact information in JSON format
 const footer_content = {
-  "email": "nithish.raja@students.iiit.ac.in",
-  "mobile": "9876543210",
-  "website": "nithishraja.github.io",
-  "linkedin": "linkedin.com/in/nithish-raja-1a81ba140/",
-  "github": "github.com/NithishRaja/"
+  "email": {
+    "text": "nithish.raja@students.iiit.ac.in",
+    "icon": "envelope"
+  },
+  "mobile": {
+    "text": "9876543210",
+    "icon": "phone"
+  },
+  "website": {
+    "text": "nithishraja.github.io",
+    "icon": "internet-explorer"
+  },
+  "linkedin": {
+    "text": "linkedin.com/in/nithish-raja-1a81ba140/",
+    "icon": "linkedin"
+  },
+  "github": {
+    "text": "github.com/NithishRaja/",
+    "icon": "github"
+  }
 }
