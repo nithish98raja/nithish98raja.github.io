@@ -1,0 +1,119 @@
+/****
+  * File containing content to be displayed on site
+  *
+  */
+
+// Store data in JSON format
+const main_content = {
+  "home": {
+    "name": "Nithish Raja",
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+  },
+  "education": [
+    {
+      "institute": {
+        "name": "IIIT H",
+        "website": "",
+        "location": "Hyderabad"
+      },
+      "degree": "CSE M.Tech",
+      "duration": {
+        "start": "August 2021",
+      }
+    },
+    {
+      "institute": {
+        "name": "BITS Pilani",
+        "website": "",
+        "location": "Hyderabad"
+      },
+      "degree": "Mechanical B.E.",
+      "duration": {
+        "start": "August 2016",
+        "end": "May 2020"
+      }
+    },
+    {
+      "institute": {
+        "name": "K.P.C.V.S.S",
+        "website": "",
+        "location": "Chennai"
+      },
+      "degree": "11th and 12th",
+      "duration": {
+        "start": "June 2014",
+        "end": "April 2016"
+      }
+    },
+    {
+      "institute": {
+        "name": "K.P.C.V.S.S",
+        "website": "",
+        "location": "Chennai"
+      },
+      "degree": "till 10th",
+      "duration": {
+        "end": "March 2014"
+      }
+    }
+  ],
+  "experience": [
+    {
+      "organisation": {
+        "name": "Couture.ai",
+        "website": "",
+        "location": "Bangalore"
+      },
+      "duration": {
+        "start": "May 2020",
+        "end": "August 2020"
+      },
+      "accomplishments": [
+        "Set up a 5 node kubernetes cluster and NFS server on production servers",
+        "Prepared kubernetes manifests for dropwizard APIs and deployed them on kubernetes",
+        "Setup a 12 node Ambari cluster and multi node ignite cluster on production servers"
+      ]
+    },
+    {
+      "organisation": {
+        "name": "Couture.ai",
+        "website": "",
+        "location": "Bangalore"
+      },
+      "duration": {
+        "start": "July 2019",
+        "end": "December 2019"
+      },
+      "accomplishments": [
+        "Deployed minIO object store on kubernetes and tested read/write operations in minIO using python",
+        "Set up a development grade kubernetes cluster (single master, three workers) with docker-registry, dynamic volume provisioning and prometheus for consuming logs",
+        "Deployed Ignite on kubernetes and tested read/write operations using spark and dropwizard",
+        "Configured Rsyslog to monitor logs from different services and forward them to a log server"
+      ]
+    },
+    {
+      "organisation": {
+        "name": "CLRI",
+        "website": "",
+        "location": "Chennai"
+      },
+      "duration": {
+        "start": "June 2018",
+        "end": "July 2018"
+      },
+      "accomplishments": [
+        "Developed a task management system using JSP"
+      ]
+    }
+  ]
+  // "projects":,
+};
+
+// Store contact information in JSON format
+const footer_content = {
+  "email": "nithish.raja@students.iiit.ac.in",
+  "mobile": "9876543210",
+  "website": "nithishraja.github.io",
+  "linkedin": "linkedin.com/in/nithish-raja-1a81ba140/",
+  "github": "github.com/NithishRaja/"
+}

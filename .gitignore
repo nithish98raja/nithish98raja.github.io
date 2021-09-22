@@ -1,0 +1,12 @@
+#
+# File containing list of files and directories to ignore
+#
+#
+
+# Ignore temp files
+temp.html
+temp.css
+temp.js
+
+# Ignore TODO list
+TODO.md
