@@ -20,7 +20,7 @@ function generate_footer(){
     let text = document.createElement("p");
     text.setAttribute("id", key+"_text");
     // Add text
-    text.innerHTML = footer_content[key].text;
+    text.textContent = footer_content[key].text;
     // Create div to hold data
     let div = document.createElement("div");
     div.setAttribute("id", key);
