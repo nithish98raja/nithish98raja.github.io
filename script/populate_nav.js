@@ -9,14 +9,11 @@ function populate_nav(){
   // Iterate over keys in main_content
   for(const key in main_content){
     // Create button for current key
-    let button = document.createElement("button");
-    button.setAttribute("id", key+"_button");
-    button.setAttribute("type", "button");
+    let button = create_element("button", [["id", key+"_button"], ["type", "button"]], ["nav_button"]);
     // Insert text into button
     button.textContent = key
     // Create div to hold button
-    let div = document.createElement("div");
-    div.setAttribute("id", key+"_nav");
+    let div = create_element("div", [["id", key+"_nav"]]);
     // Add button to div
     div.appendChild(button);
     // Add div to navbar

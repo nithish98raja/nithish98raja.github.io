@@ -6,26 +6,19 @@
 // Handler to generate content for home section
 function home_handler(){
   // Create element to hold profile image
-  let profile_image = document.createElement("img");
-  profile_image.setAttribute("id", "profile_image");
-  profile_image.setAttribute("alt", main_content["home"]["name"]);
-  profile_image.setAttribute("src", main_content["home"]["image"]);
+  let profile_image = create_element("img", [["id", "profile_image"], ["alt", main_content["home"]["name"]], ["src", main_content["home"]["image"]]]);
   // Create element to hold description
-  let description = document.createElement("p");
-  description.setAttribute("id", "description");
+  let description = create_element("p", [["id", "description"]]);
   // Add description text
   description.textContent = main_content["home"]["description"];
   // Add profile image to image container
-  let image_container = document.createElement("div");
-  image_container.setAttribute("id", "image_container");
+  let image_container = create_element("div", [["id", "image_container"]]);
   image_container.appendChild(profile_image);
   // Add description to description container
-  let description_container = document.createElement("div");
-  description_container.setAttribute("id", "description_container");
+  let description_container = create_element("div", [["id", "description_container"]]);
   description_container.appendChild(description);
   // Create container for image and description
-  let container = document.createElement("article");
-  container.setAttribute("id", "home_container");
+  let container = create_element("article", [["id", "home_container"]]);
   // Add image to container
   container.appendChild(image_container);
   // Add description to container

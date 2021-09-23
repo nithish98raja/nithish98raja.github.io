@@ -16,7 +16,7 @@ body {
   margin-top: 20px;
 }
 
-#nav button {
+.nav_button {
   background-color: inherit;
   border-width: 2px 2px 0px 2px;
   border-top-right-radius: 5px;
