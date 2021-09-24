@@ -14,7 +14,8 @@ const main_content = {
     {
       "institute": {
         "name": "IIIT H",
-        "website": "",
+        "logo": "images.shiksha.com/mediadata/images/1571920801phpDEQFI7.jpeg",
+        "website": "iiit.ac.in/",
         "location": "Hyderabad"
       },
       "degree": "CSE M.Tech",
@@ -25,7 +26,8 @@ const main_content = {
     {
       "institute": {
         "name": "BITS Pilani",
-        "website": "",
+        "logo": "upload.wikimedia.org/wikipedia/en/thumb/d/d3/BITS_Pilani-Logo.svg/185px-BITS_Pilani-Logo.svg.png",
+        "website": "bits-pilani.ac.in/hyderabad/",
         "location": "Hyderabad"
       },
       "degree": "Mechanical B.E.",
@@ -37,7 +39,8 @@ const main_content = {
     {
       "institute": {
         "name": "K.P.C.V.S.S",
-        "website": "",
+        "logo": "pl.respaper.com/160/s.3edc9a3222.jpg",
+        "website": "kpcvs.co.in/",
         "location": "Chennai"
       },
       "degree": "11th and 12th",
@@ -49,10 +52,11 @@ const main_content = {
     {
       "institute": {
         "name": "K.P.C.V.S.S",
-        "website": "",
+        "logo": "pl.respaper.com/160/s.3edc9a3222.jpg",
+        "website": "kpcvs.co.in/",
         "location": "Chennai"
       },
-      "degree": "till 10th",
+      "degree": "up till 10th",
       "duration": {
         "end": "March 2014"
       }
