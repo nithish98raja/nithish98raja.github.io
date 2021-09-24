@@ -84,7 +84,7 @@ function education_handler(){
     let footer_text = create_element("p", [["id", item["institute"]["name"]+"_footer_text"]]);
     footer_text.textContent = "visit institute ";
     // Create hyper link
-    let hlink = create_element("a", [["id", item["institute"]["name"]+"_link"], ["href", item["institute"]["website"]]]);
+    let hlink = create_element("a", [["id", item["institute"]["name"]+"_link"], ["target", "_blank"], ["href", item["institute"]["website"]]]);
     hlink.textContent = "website";
     // Add link to footer text
     footer_text.appendChild(hlink);

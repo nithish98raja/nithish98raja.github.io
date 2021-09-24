@@ -40,7 +40,7 @@ const main_content = {
       "institute": {
         "name": "K.P.C.V.S.S",
         "logo": "https://pl.respaper.com/160/s.3edc9a3222.jpg",
-        "website": "https://kpcvs.co.in/",
+        "website": "http://kpcvs.co.in/",
         "location": "Chennai"
       },
       "degree": "11th and 12th",
@@ -53,7 +53,7 @@ const main_content = {
       "institute": {
         "name": "K.P.C.V.S.S",
         "logo": "https://pl.respaper.com/160/s.3edc9a3222.jpg",
-        "website": "https://kpcvs.co.in/",
+        "website": "http://kpcvs.co.in/",
         "location": "Chennai"
       },
       "degree": "up till 10th",
