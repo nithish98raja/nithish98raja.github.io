@@ -14,8 +14,8 @@ const main_content = {
     {
       "institute": {
         "name": "IIIT H",
-        "logo": "images.shiksha.com/mediadata/images/1571920801phpDEQFI7.jpeg",
-        "website": "iiit.ac.in/",
+        "logo": "https://images.shiksha.com/mediadata/images/1571920801phpDEQFI7.jpeg",
+        "website": "https://iiit.ac.in/",
         "location": "Hyderabad"
       },
       "degree": "CSE M.Tech",
@@ -26,8 +26,8 @@ const main_content = {
     {
       "institute": {
         "name": "BITS Pilani",
-        "logo": "upload.wikimedia.org/wikipedia/en/thumb/d/d3/BITS_Pilani-Logo.svg/185px-BITS_Pilani-Logo.svg.png",
-        "website": "bits-pilani.ac.in/hyderabad/",
+        "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/d/d3/BITS_Pilani-Logo.svg/185px-BITS_Pilani-Logo.svg.png",
+        "website": "https://bits-pilani.ac.in/hyderabad/",
         "location": "Hyderabad"
       },
       "degree": "Mechanical B.E.",
@@ -39,8 +39,8 @@ const main_content = {
     {
       "institute": {
         "name": "K.P.C.V.S.S",
-        "logo": "pl.respaper.com/160/s.3edc9a3222.jpg",
-        "website": "kpcvs.co.in/",
+        "logo": "https://pl.respaper.com/160/s.3edc9a3222.jpg",
+        "website": "https://kpcvs.co.in/",
         "location": "Chennai"
       },
       "degree": "11th and 12th",
@@ -52,8 +52,8 @@ const main_content = {
     {
       "institute": {
         "name": "K.P.C.V.S.S",
-        "logo": "pl.respaper.com/160/s.3edc9a3222.jpg",
-        "website": "kpcvs.co.in/",
+        "logo": "https://pl.respaper.com/160/s.3edc9a3222.jpg",
+        "website": "https://kpcvs.co.in/",
         "location": "Chennai"
       },
       "degree": "up till 10th",
