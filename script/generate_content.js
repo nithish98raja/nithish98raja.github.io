@@ -6,11 +6,11 @@
 // Handler to generate content for home section
 function home_handler(){
   // Create element to hold profile image
-  let profile_image = create_element("img", [["id", "profile_image"], ["alt", main_content["home"]["name"]], ["src", main_content["home"]["image"]]]);
+  let profile_image = create_element("img", [["id", "profile_image"], ["alt", home_content["name"]], ["src", home_content["image"]]]);
   // Create element to hold description
   let description = create_element("p", [["id", "description"]]);
   // Add description text
-  description.textContent = main_content["home"]["description"];
+  description.textContent = home_content["description"];
   // Add profile image to image container
   let image_container = create_element("div", [["id", "image_container"]]);
   image_container.appendChild(profile_image);
@@ -32,7 +32,7 @@ function education_handler(){
   // Create container
   let container = create_element("div", [["id", "education_container"]]);
   // Iterate over entries in education
-  for(item of main_content["education"]){
+  for(item of education_content){
     // Create table
     let table = create_element("table", [["id", item["institute"]["name"]]]);
     // Create table row
@@ -111,11 +111,19 @@ function experience_handler(){
   return para;
 }
 
+// Handler to generate content for project section
+function project_handler(){
+  let para = document.createElement("p");
+  para.textContent = "popopo";
+  return para;
+}
+
 
 const content_map = {
   "home": home_handler,
   "education": education_handler,
-  "experience": experience_handler
+  "experience": experience_handler,
+  "project": project_handler
 }
 
 function generate_content(key){
