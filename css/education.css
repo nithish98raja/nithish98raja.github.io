@@ -3,11 +3,38 @@
   *
   */
 
-@media (max-width: 699px){
-  table {
-    width: 100%;
+table {
+  width: 100%;
+}
+
+@media (min-width: 700px){
+  /* .image_cell {
+    display: none;
+  } */
+
+  .table_header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
+  .table_main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .table_footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 699px){
   .image_cell {
     display: none;
   }
