@@ -111,7 +111,93 @@ const main_content = {
       ]
     }
   ]
-  // "projects":,
+  "projects": [
+    {
+      "title": "NaturalSelectionSimulator",
+      "tags": ["Python", "Multi-threading"],
+      "description": [
+        "Simulates game where each player has to find food and return home before end of day",
+        "Attributes of players have a chance to mutate at end of each day"
+      ],
+      "references": [
+        {
+          "name": "github",
+          "link": "https://github.com/NithishRaja/natural-selection-simulator"
+        },
+        {
+          "name": "docker hub",
+          "link": "https://hub.docker.com/r/nithishraja/natural_selection_simulator"
+        }
+      ]
+    },
+    {
+      "title": "Daily Task Automation",
+      "tags": ["Python", "Web scraping", "Twitter API", "Youtube Data API", "VueJS"],
+      "description": [
+        "Presents data from multiple sources in a single screen",
+        "Some of the sources include Twitter, Youtube, multiple webpages and JSON files released by the NBA"
+      ],
+      "references": [
+        {
+          "name": "github",
+          "link": "https://github.com/NithishRaja/daily_tasks"
+        },
+        {
+          "name": "docker hub",
+          "link": "https://hub.docker.com/repository/docker/nithishraja/start-day"
+        }
+      ]
+    },
+    {
+      "title": "Tree Visualiser",
+      "tags": ["UI", "Javascript", "VueJS"],
+      "description": [
+        "Simple UI to display a tree where each node can have any number of children"
+      ],
+      "references": [
+        {
+          "name": "github",
+          "link": "https://github.com/NithishRaja/tree_visualiser"
+        },
+        {
+          "name": "docker hub",
+          "link": "https://hub.docker.com/repository/docker/nithishraja/tree-visualiser"
+        }
+      ]
+    },
+    {
+      "title": "Sliding Puzzle",
+      "tags": ["Python", "Graphs", "UI"],
+      "description": [
+        "UI for nxn sliding puzzle",
+        "Calculates solution by performing BFS"
+      ],
+      "references": [
+        {
+          "name": "github",
+          "link": "https://github.com/NithishRaja/sliding_puzzle"
+        }
+      ]
+    },
+    {
+      "title": "Manga Downloader",
+      "tags": ["Python", "Web scraping", "Multi threading"],
+      "description": [
+        "Downloads manga pages by scraping websites",
+        "Leverages multi threading to complete downloads quickly"
+      ],
+      "references": [
+        {
+          "name": "github",
+          "link": "https://github.com/NithishRaja/manga-downloader"
+        },
+        {
+          "name": "docker hub",
+          "link": "https://hub.docker.com/r/nithishraja/natural_selection_simulator"
+        }
+      ]
+    }
+  ]
 };
 
 // Store contact information in JSON format
