@@ -8,10 +8,6 @@ table {
 }
 
 @media (min-width: 700px){
-  /* .image_cell {
-    display: none;
-  } */
-
   .table_header {
     display: flex;
     flex-direction: column;
