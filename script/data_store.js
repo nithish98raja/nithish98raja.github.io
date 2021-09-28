@@ -69,7 +69,7 @@ const experience_content = [
   {
     "organisation": {
       "name": "Couture.ai",
-      "website": "",
+      "website": "https://couture.ai/",
       "location": "Bangalore"
     },
     "duration": {
@@ -85,7 +85,7 @@ const experience_content = [
   {
     "organisation": {
       "name": "Couture.ai",
-      "website": "",
+      "website": "https://couture.ai/",
       "location": "Bangalore"
     },
     "duration": {
@@ -102,7 +102,7 @@ const experience_content = [
   {
     "organisation": {
       "name": "CLRI",
-      "website": "",
+      "website": "https://www.clri.org/",
       "location": "Chennai"
     },
     "duration": {
