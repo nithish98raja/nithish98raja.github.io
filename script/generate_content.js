@@ -38,13 +38,13 @@ function education_handler(){
     // Create table row
     let table_row_1 = create_element("tr", [["id", item["institute"]["name"]+"_row_1"]]);
     // Create td element
-    let image_cell = create_element("td", [["id", item["institute"]["name"]+"_image_cell"]]);
+    let image_cell = create_element("td", [["id", item["institute"]["name"]+"_image_cell"], ["rowspan", 3]], ["image_cell"]);
     // Create image element
     let image = create_element("img", [["id", item["institute"]["name"]+"_image_cell"], ["src", item["institute"]["logo"]], ["alt", item["institute"]["name"]]]);
     // Add image to image cell
     image_cell.appendChild(image);
     // Create td element
-    let header = create_element("td", [["id", item["institute"]["name"]+"_header"]]);
+    let header = create_element("td", [["id", item["institute"]["name"]+"_header"]], ["table_header"]);
     // Create headings
     let title = create_element("h1", [["id", item["institute"]["name"]+"_title"]]);
     title.textContent = item["institute"]["name"];
@@ -59,7 +59,7 @@ function education_handler(){
     // Create table row
     let table_row_2 = create_element("tr", [["id", item["institute"]["name"]+"_row_2"]]);
     // Create td element
-    let main = create_element("td", [["id", item["institute"]["name"]+"_main"]]);
+    let main = create_element("td", [["id", item["institute"]["name"]+"_main"]], ["table_main"]);
     // Create text
     let degree = create_element("p", [["id", item["institute"]["name"]+"_degree"]]);
     degree.textContent = item["degree"];
@@ -79,7 +79,7 @@ function education_handler(){
     // Create table row
     let table_row_3 = create_element("tr", [["id", item["institute"]["name"]+"_row_3"]]);
     // Create td element
-    let footer = create_element("td", [["id", item["institute"]["name"]+"_footer"]]);
+    let footer = create_element("td", [["id", item["institute"]["name"]+"_footer"]], ["table_footer"]);
     // Create text
     let footer_text = create_element("p", [["id", item["institute"]["name"]+"_footer_text"]]);
     footer_text.textContent = "visit institute ";
