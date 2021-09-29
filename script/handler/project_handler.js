@@ -7,20 +7,24 @@ function create_project_card_header(item){
   // Initialise base id
   let base_id = item["title"];
   // Create heading container
-  let heading_container = create_element("div", [["id", base_id+"_heading"]]);
-  heading_container.textContent = item["title"];
+  let heading_container = create_element("div", [["id", base_id+"_heading_container"]], ["project_card_heading_container"]);
+  // Create heading
+  let heading = create_element("h1", [["id", base_id+"_heading"]], ["project_card_heading"]);
+  heading.textContent = item["title"];
+  // Append heading to heading_container
+  heading_container.appendChild(heading);
   // Create tag container
-  let tag_container = create_element("div", [["id", base_id+"_tags"]]);
+  let tag_container = create_element("div", [["id", base_id+"_tags"]], ["project_card_tag_container"]);
   // Iterate over tags
   item["tags"].forEach(function(element, index){
     // Create container for current tag
-    let current_tag = create_element("p", [["id", base_id+"_tag_"+index]]);
+    let current_tag = create_element("p", [["id", base_id+"_tag_"+index]], ["project_card_tag_text"]);
     current_tag.textContent = element;
     // Append current tag to tag container
     tag_container.appendChild(current_tag);
   });
   // Create header
-  let header = create_element("div", [["id", base_id+"_header"]]);
+  let header = create_element("div", [["id", base_id+"_header"]], ["project_card_header"]);
   // Append heading container
   header.appendChild(heading_container);
   // Append tag container
