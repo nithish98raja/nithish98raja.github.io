@@ -16,7 +16,6 @@ function add_nav_listeners(){
       let clone = section.cloneNode(false);
       // Add new content to empty section
       clone.appendChild(generate_content(key));
-      console.log(key);
       // Update main section
       section.parentNode.replaceChild(clone, section);
     });
