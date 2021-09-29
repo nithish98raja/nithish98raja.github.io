@@ -4,22 +4,24 @@
   */
 
 function create_card_header(item){
+  // Initialise variable to hold base id
+  let base_id = item["organisation"]["name"];
   // Initialise header
-  let header = create_element("div", [["id", item["organisation"]["name"]+"_header"]]);
+  let header = create_element("div", [["id", base_id+"_header"]]);
   // Initialise heading
-  let heading = create_element("h1", [["id", item["organisation"]["name"]+"_heading"]]);
+  let heading = create_element("h1", [["id", base_id+"_heading"]]);
   // Initialise anchor tag to hold org name
-  let org_name = create_element("a", [["id", item["organisation"]["name"]+"_name"], ["href", item["organisation"]["website"]], ["target", "_blank"]]);
+  let org_name = create_element("a", [["id", base_id+"_name"], ["href", item["organisation"]["website"]], ["target", "_blank"]]);
   org_name.textContent = item["organisation"]["name"];
   // Append org_name to heading
   heading.appendChild(org_name);
   // Initialise subheading
-  let subheading = create_element("h2", [["id", item["organisation"]["name"]+"_subheading"]]);
+  let subheading = create_element("h2", [["id", base_id+"_subheading"]]);
   subheading.textContent = item["organisation"]["location"];
   // Create a heading container
-  let heading_container = create_element("div", [["id", item["organisation"]["name"]+"_heading_container"]]);
+  let heading_container = create_element("div", [["id", base_id+"_heading_container"]]);
   // Initialise div to hold tag
-  let tag = create_element("div", [["id", item["organisation"]["name"]+"_tag"]]);
+  let tag = create_element("div", [["id", base_id+"_tag"]]);
   // Check if start date exists
   if("start" in item["duration"]){
     tag.textContent = "from "+item["duration"]["start"]+" ";
@@ -40,12 +42,14 @@ function create_card_header(item){
 }
 
 function create_card_body(item){
+  // Initialise variable to hold base id
+  let base_id = item["organisation"]["name"];
   // Initialise body
-  let body = create_element("div", [["id", item["organisation"]["name"]+"_body"]]);
+  let body = create_element("div", [["id", base_id+"_body"]]);
   // Iterate over entries in accomplishments
   item["accomplishments"].forEach(function(entry, index){
     // Initialise div for current entry
-    let element = create_element("div", [["id", item["organisation"]["name"]+"_entry_"+index]]);
+    let element = create_element("div", [["id", base_id+"_entry_"+index]]);
     element.textContent = entry;
     // Add entry to body
     body.appendChild(element);
@@ -59,9 +63,11 @@ function experience_handler(){
   // Initialise container
   let container = create_element("article", [["id", "experience_container"]]);
   // Iterate over entries in experience_content
-  experience_content.forEach(function(item){
+  experience_content.forEach(function(item, index){
+    // Initialise variable to hold base id
+    let base_id = item["organisation"]["name"]+"_"+index;
     // Initialise container for current item
-    let card = create_element("div", [["id", item["organisation"]["name"]+"_card"]]);
+    let card = create_element("div", [["id", base_id+"_card"]]);
     // Call function to get header
     let header = create_card_header(item);
     // Call function to get body

@@ -4,20 +4,22 @@
   */
 
 function create_row_1(item){
+  // Initialise variable to hold base id
+  let base_id = item["institute"]["name"];
   // Create table row
-  let table_row_1 = create_element("tr", [["id", item["institute"]["name"]+"_row_1"]]);
+  let table_row_1 = create_element("tr", [["id", base_id+"_row_1"]]);
   // Create td element
-  let image_cell = create_element("td", [["id", item["institute"]["name"]+"_image_cell"], ["rowspan", 3]], ["image_cell"]);
+  let image_cell = create_element("td", [["id", base_id+"_image_cell"], ["rowspan", 3]], ["image_cell"]);
   // Create image element
-  let image = create_element("img", [["id", item["institute"]["name"]+"_image_cell"], ["src", item["institute"]["logo"]], ["alt", item["institute"]["name"]]]);
+  let image = create_element("img", [["id", base_id+"_image_cell"], ["src", item["institute"]["logo"]], ["alt", item["institute"]["name"]]]);
   // Add image to image cell
   image_cell.appendChild(image);
   // Create td element
-  let header = create_element("td", [["id", item["institute"]["name"]+"_header"]], ["table_header"]);
+  let header = create_element("td", [["id", base_id+"_header"]], ["table_header"]);
   // Create headings
-  let title = create_element("h1", [["id", item["institute"]["name"]+"_title"]]);
+  let title = create_element("h1", [["id", base_id+"_title"]]);
   title.textContent = item["institute"]["name"];
-  let subtitle = create_element("h2", [["id", item["institute"]["name"]+"_subtitle"]]);
+  let subtitle = create_element("h2", [["id", base_id+"_subtitle"]]);
   subtitle.textContent = item["institute"]["location"];
   // Add title and subtitle to header
   header.appendChild(title);
@@ -30,14 +32,16 @@ function create_row_1(item){
 }
 
 function create_row_2(item){
+  // Initialise variable to hold base id
+  let base_id = item["institute"]["name"];
   // Create table row
-  let table_row_2 = create_element("tr", [["id", item["institute"]["name"]+"_row_2"]]);
+  let table_row_2 = create_element("tr", [["id", base_id+"_row_2"]]);
   // Create td element
-  let main = create_element("td", [["id", item["institute"]["name"]+"_main"]], ["table_main"]);
+  let main = create_element("td", [["id", base_id+"_main"]], ["table_main"]);
   // Create text
-  let degree = create_element("p", [["id", item["institute"]["name"]+"_degree"]]);
+  let degree = create_element("p", [["id", base_id+"_degree"]]);
   degree.textContent = item["degree"];
-  let duration = create_element("p", [["id", item["institute"]["name"]+"_degree"]]);
+  let duration = create_element("p", [["id", base_id+"_degree"]]);
   duration.textContent = "";
   if("start" in item["duration"]){
     duration.textContent += "from "+item["duration"]["start"];
@@ -55,15 +59,17 @@ function create_row_2(item){
 }
 
 function create_row_3(item){
+  // Initialise variable to hold base id
+  let base_id = item["institute"]["name"];
   // Create table row
-  let table_row_3 = create_element("tr", [["id", item["institute"]["name"]+"_row_3"]]);
+  let table_row_3 = create_element("tr", [["id", base_id+"_row_3"]]);
   // Create td element
-  let footer = create_element("td", [["id", item["institute"]["name"]+"_footer"]], ["table_footer"]);
+  let footer = create_element("td", [["id", base_id+"_footer"]], ["table_footer"]);
   // Create text
-  let footer_text = create_element("p", [["id", item["institute"]["name"]+"_footer_text"]]);
+  let footer_text = create_element("p", [["id", base_id+"_footer_text"]]);
   footer_text.textContent = "visit institute ";
   // Create hyper link
-  let hlink = create_element("a", [["id", item["institute"]["name"]+"_link"], ["target", "_blank"], ["href", item["institute"]["website"]]]);
+  let hlink = create_element("a", [["id", base_id+"_link"], ["target", "_blank"], ["href", item["institute"]["website"]]]);
   hlink.textContent = "website";
   // Add link to footer text
   footer_text.appendChild(hlink);
@@ -80,9 +86,11 @@ function education_handler(){
   // Create container
   let container = create_element("div", [["id", "education_container"]]);
   // Iterate over entries in education
-  education_content.forEach(function(item){
+  education_content.forEach(function(item, index){
+    // Initialise variable to hold base id
+    let base_id = item["institute"]["name"]+"_"+index;
     // Create table
-    let table = create_element("table", [["id", item["institute"]["name"]]]);
+    let table = create_element("table", [["id", base_id]]);
     // Call function to get row 1
     let table_row_1 = create_row_1(item);
     // Call function to get row 2
