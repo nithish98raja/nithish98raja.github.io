@@ -7,19 +7,19 @@ function create_experience_card_header(item){
   // Initialise variable to hold base id
   let base_id = item["organisation"]["name"];
   // Initialise header
-  let header = create_element("div", [["id", base_id+"_header"]]);
+  let header = create_element("div", [["id", base_id+"_header"]], ["exp_card_header"]);
   // Initialise heading
-  let heading = create_element("h1", [["id", base_id+"_heading"]]);
+  let heading = create_element("h1", [["id", base_id+"_heading"]], ["exp_card_heading"]);
   // Initialise anchor tag to hold org name
-  let org_name = create_element("a", [["id", base_id+"_name"], ["href", item["organisation"]["website"]], ["target", "_blank"]]);
+  let org_name = create_element("a", [["id", base_id+"_name"], ["href", item["organisation"]["website"]], ["target", "_blank"]], ["exp_card_heading_text"]);
   org_name.textContent = item["organisation"]["name"];
   // Append org_name to heading
   heading.appendChild(org_name);
   // Initialise subheading
-  let subheading = create_element("h2", [["id", base_id+"_subheading"]]);
+  let subheading = create_element("h2", [["id", base_id+"_subheading"]], ["exp_card_subheading"]);
   subheading.textContent = item["organisation"]["location"];
   // Create a heading container
-  let heading_container = create_element("div", [["id", base_id+"_heading_container"]]);
+  let heading_container = create_element("div", [["id", base_id+"_heading_container"]], ["exp_card_heading_container"]);
   // Initialise div to hold tag
   let tag = create_element("div", [["id", base_id+"_tag"]]);
   // Check if start date exists
