@@ -3,7 +3,7 @@
   *
   */
 
-function create_card_header(item){
+function create_experience_card_header(item){
   // Initialise variable to hold base id
   let base_id = item["organisation"]["name"];
   // Initialise header
@@ -41,7 +41,7 @@ function create_card_header(item){
   return header;
 }
 
-function create_card_body(item){
+function create_experience_card_body(item){
   // Initialise variable to hold base id
   let base_id = item["organisation"]["name"];
   // Initialise body
@@ -69,9 +69,9 @@ function experience_handler(){
     // Initialise container for current item
     let card = create_element("div", [["id", base_id+"_card"]]);
     // Call function to get header
-    let header = create_card_header(item);
+    let header = create_experience_card_header(item);
     // Call function to get body
-    let body = create_card_body(item);
+    let body = create_experience_card_body(item);
     // Append header to card
     card.appendChild(header);
     // Append body to card
