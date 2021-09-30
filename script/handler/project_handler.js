@@ -76,7 +76,7 @@ function project_handler(){
     // Initialise base id
     let base_id = item["title"]+"_"+index;
     // Initialise card
-    let card = create_element("div", [["id", base_id+"card"]]);
+    let card = create_element("div", [["id", base_id+"card"]], ["project_card"]);
     // Call function to get header
     let header = create_project_card_header(item);
     // Call function to get body

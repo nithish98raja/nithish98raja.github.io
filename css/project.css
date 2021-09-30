@@ -3,6 +3,16 @@
   *
   */
 
+.project_card {
+  /* width: 100%; */
+  background-image: url("../images/white_background.jpg");
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  box-shadow: 5px 5px 10px slategrey;
+}
+
 .project_card_header {
   display: flex;
   flex-direction: column;
