@@ -211,22 +211,27 @@ const content_list = ["home", "education", "experience", "project"];
 const footer_content = {
   "email": {
     "text": "nithish.raja@students.iiit.ac.in",
+    "link": "mailto:nithish.raja@students.iiit.ac.in",
     "icon": "envelope"
   },
   "mobile": {
     "text": "9876543210",
+    "link": "9876543210",
     "icon": "phone"
   },
   "website": {
-    "text": "nithishraja.github.io",
+    "text": "visit my website",
+    "link": "https://nithishraja.github.io",
     "icon": "internet-explorer"
   },
   "linkedin": {
-    "text": "linkedin.com/in/nithish-raja-1a81ba140/",
+    "text": "connect with me on linkedin",
+    "link": "https://linkedin.com/in/nithish-raja-1a81ba140/",
     "icon": "linkedin"
   },
   "github": {
-    "text": "github.com/NithishRaja/",
+    "text": "Explore my projects",
+    "link": "https://github.com/NithishRaja/",
     "icon": "github"
   }
 };
