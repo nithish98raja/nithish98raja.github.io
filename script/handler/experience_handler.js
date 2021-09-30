@@ -21,7 +21,7 @@ function create_experience_card_header(item){
   // Create a heading container
   let heading_container = create_element("div", [["id", base_id+"_heading_container"]], ["exp_card_heading_container"]);
   // Initialise div to hold tag
-  let tag = create_element("div", [["id", base_id+"_tag"]]);
+  let tag = create_element("div", [["id", base_id+"_tag"]], ["exp_card_header_tag"]);
   // Check if start date exists
   if("start" in item["duration"]){
     tag.textContent = "from "+item["duration"]["start"]+" ";
@@ -45,11 +45,11 @@ function create_experience_card_body(item){
   // Initialise variable to hold base id
   let base_id = item["organisation"]["name"];
   // Initialise body
-  let body = create_element("div", [["id", base_id+"_body"]]);
+  let body = create_element("ul", [["id", base_id+"_body"]], ["exp_card_body"]);
   // Iterate over entries in accomplishments
   item["accomplishments"].forEach(function(entry, index){
     // Initialise div for current entry
-    let element = create_element("div", [["id", base_id+"_entry_"+index]]);
+    let element = create_element("li", [["id", base_id+"_entry_"+index]]);
     element.textContent = entry;
     // Add entry to body
     body.appendChild(element);

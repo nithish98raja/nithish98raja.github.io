@@ -37,11 +37,11 @@ function create_project_card_body(item){
   // Initialise base id
   let base_id = item["title"];
   // Create body
-  let body = create_element("div", [["id", base_id+"_body"]]);
+  let body = create_element("ul", [["id", base_id+"_body"]], ["project_card_body"]);
   // Iterate over entries in description
   item["description"].forEach(function(element, index){
     // Create div to hold element
-    let element_container = create_element("div", [["id", base_id+"_description_"+index]]);
+    let element_container = create_element("li", [["id", base_id+"_description_"+index]]);
     element_container.textContent = element;
     // Append element to body
     body.appendChild(element_container);
@@ -54,11 +54,11 @@ function create_project_card_footer(item){
   // Initialise base id
   let base_id = item["title"];
   // Create footer
-  let footer = create_element("div", [["id", base_id+"_footer"]]);
+  let footer = create_element("div", [["id", base_id+"_footer"]], ["project_card_footer"]);
   // Iterate over references
   item["references"].forEach(function(element, index){
     // Create hyperlink for current element
-    let link = create_element("a", [["id", base_id+"_link_"+index], ["target", "_blank"], ["href", element["link"]]]);
+    let link = create_element("a", [["id", base_id+"_link_"+index], ["target", "_blank"], ["href", element["link"]]], ["project_card_footer_link"]);
     link.textContent = element["name"];
     // Append link to footer
     footer.appendChild(link);

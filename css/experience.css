@@ -17,6 +17,10 @@
   flex-direction: column;
   align-items: start;
   justify-content: center;
+  padding-bottom: 10px;
+  border-bottom: 2px solid black;
+  margin-bottom: 10px;
+  padding-left: 10px;
 }
 
 .exp_card_heading_container {
@@ -26,9 +30,33 @@
   justify-content: center;
 }
 
+@media (max-width: 699px){
+  .exp_card_header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 0px;
+  }
+
+  .exp_card_heading_container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+}
+
 .exp_card_heading {
   font-size: x-large;
   margin: 0px;
+}
+
+@media (min-width: 700px){
+  .exp_card_heading {
+    margin-right: 10px;
+  }
 }
 
 .exp_card_heading_text {
@@ -41,4 +69,13 @@
   color: black;
   font-size: large;
   margin: 0px;
+}
+
+.exp_card_header_tag {
+  color: #284242;
+}
+
+.exp_card_body {
+  padding-left: 30px;
+  padding-right: 30px;
 }
