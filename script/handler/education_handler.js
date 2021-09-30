@@ -17,9 +17,9 @@ function create_row_1(item){
   // Create td element
   let header = create_element("td", [["id", base_id+"_header"]], ["table_header"]);
   // Create headings
-  let title = create_element("h1", [["id", base_id+"_title"]]);
+  let title = create_element("h1", [["id", base_id+"_title"]], ["education_card_title"]);
   title.textContent = item["institute"]["name"];
-  let subtitle = create_element("h2", [["id", base_id+"_subtitle"]]);
+  let subtitle = create_element("h2", [["id", base_id+"_subtitle"]], ["education_card_subtitle"]);
   subtitle.textContent = item["institute"]["location"];
   // Add title and subtitle to header
   header.appendChild(title);
@@ -39,9 +39,9 @@ function create_row_2(item){
   // Create td element
   let main = create_element("td", [["id", base_id+"_main"]], ["table_main"]);
   // Create text
-  let degree = create_element("p", [["id", base_id+"_degree"]]);
+  let degree = create_element("p", [["id", base_id+"_degree"]], ["education_card_text"]);
   degree.textContent = item["degree"];
-  let duration = create_element("p", [["id", base_id+"_degree"]]);
+  let duration = create_element("p", [["id", base_id+"_degree"]], ["education_card_text"]);
   duration.textContent = "";
   if("start" in item["duration"]){
     duration.textContent += "from "+item["duration"]["start"];
@@ -66,7 +66,7 @@ function create_row_3(item){
   // Create td element
   let footer = create_element("td", [["id", base_id+"_footer"]], ["table_footer"]);
   // Create text
-  let footer_text = create_element("p", [["id", base_id+"_footer_text"]]);
+  let footer_text = create_element("p", [["id", base_id+"_footer_text"]], ["education_card_footer_text"]);
   footer_text.textContent = "visit institute ";
   // Create hyper link
   let hlink = create_element("a", [["id", base_id+"_link"], ["target", "_blank"], ["href", item["institute"]["website"]]]);
