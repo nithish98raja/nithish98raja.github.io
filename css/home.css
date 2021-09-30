@@ -3,6 +3,12 @@
   *
   */
 
+#home_container {
+  background-image: url("../images/white_background.jpg");
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px slategrey;
+}
+
 @media (min-width: 700px){
   #home_container {
     display: flex;
