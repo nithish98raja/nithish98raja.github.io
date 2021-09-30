@@ -4,6 +4,7 @@
   */
 
 body {
+  background-image: url("../images/light_blue_background.jpg");
   padding: 0px;
   margin: 0px;
   display: flex;
@@ -13,12 +14,12 @@ body {
 }
 
 #nav {
+  background-image: url("../images/dark_blue_background.jpg");
   display: flex;
   flex-direction: row;
   align-items: baseline;
   justify-content: space-around;
   width: 100%;
-  margin-top: 20px;
 }
 
 .nav_button {
@@ -30,9 +31,15 @@ body {
   cursor: pointer;
 }
 
+#footer {
+  background-image: url("../images/black_background.jpg");
+  width: 100%;
+  bottom: 0px;
+  color: white;
+}
+
 @media (min-width: 700px){
   #footer {
-    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -57,7 +64,6 @@ body {
 
 @media (max-width: 699px){
   #footer {
-    width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
