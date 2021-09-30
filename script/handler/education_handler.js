@@ -90,7 +90,7 @@ function education_handler(){
     // Initialise variable to hold base id
     let base_id = item["institute"]["name"]+"_"+index;
     // Create table
-    let table = create_element("table", [["id", base_id]]);
+    let table = create_element("table", [["id", base_id]], ["education_card"]);
     // Call function to get row 1
     let table_row_1 = create_row_1(item);
     // Call function to get row 2
