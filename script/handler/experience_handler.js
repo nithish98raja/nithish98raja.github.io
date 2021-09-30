@@ -67,7 +67,7 @@ function experience_handler(){
     // Initialise variable to hold base id
     let base_id = item["organisation"]["name"]+"_"+index;
     // Initialise container for current item
-    let card = create_element("div", [["id", base_id+"_card"]]);
+    let card = create_element("div", [["id", base_id+"_card"]], ["experience_card"]);
     // Call function to get header
     let header = create_experience_card_header(item);
     // Call function to get body

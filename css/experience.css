@@ -3,6 +3,15 @@
   *
   */
 
+.experience_card {
+  background-image: url("../images/white_background.jpg");
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  box-shadow: 5px 5px 10px slategrey;
+}
+
 .exp_card_header {
   display: flex;
   flex-direction: column;
@@ -20,10 +29,6 @@
 .exp_card_heading {
   font-size: x-large;
   margin: 0px;
-  /* display: flex;
-  flex-direction: row;
-  align-items: start;
-  justify-content: center; */
 }
 
 .exp_card_heading_text {
