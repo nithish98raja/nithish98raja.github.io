@@ -233,5 +233,10 @@ const footer_content = {
     "text": "Explore my projects",
     "link": "https://github.com/NithishRaja/",
     "icon": "github"
+  },
+  "resume": {
+    "text": "View my resume",
+    "link": "./Nithish_Raja.pdf",
+    "icon": "file"
   }
 };
