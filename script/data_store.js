@@ -6,7 +6,7 @@
 // Store data for home tab as JSON object
 const home_content = {
   "name": "Nithish Raja",
-  "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+  "description": "Hello, I am Nithish Raja. A masters student at IIIT Hyderabad. I hate talking about myself, but I have to make this paragraph as long as possible to prevent a bunch of CSS from breaking. I am passionate about building complex systems. Untill a while ago, I was doing a lot of work in the application layer (see project tab and github). However, I am now trying to move closer to the kernel level. This shift began after I started learning about Andrew Tannenbaum, Linus Torvalds, Leslie Lamport and Richard Stallman. The common factor among the four is that they all solved whatever problem they were facing by building a system of their own. I too strive to reach such a stage where not only me, but everyone can benefit from my work.",
   "image": "images/NithishRaja.jpg"
 };
 
